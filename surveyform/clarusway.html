@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarusway</title>
+    <link rel="stylesheet" href="abcd.css">
+</head>
+
+<body>
+    <form action="">
+<header>
+    <h1>Clarusway Survey Form</h1>
+</header>
+
+<section>
+   <p style="font-size: larger;">Thank you for your time to help us improve the platform </p>
+</section>
+
+<section>
+    <label for="name">Name</label><br>
+    <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+    <label for="surname">Surname</label><br>
+    <input type="text" id="surname" placeholder="Enter your surname" required><br><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email"  placeholder="user@clarusway.com" required>
+
+</section>
+
+<section>
+<p style="font-size: larger;">Which option best describes your current role ?</p>
+<input list="role" placeholder="Select an option">
+<datalist id="role">
+    <option value="Student">
+    <option value="Developer">
+    <option value="Unemployed">
+    <option value="Attorney">
+    <option value="Teacher">
+</datalist>
+</section>
+
+
+<section>
+    <p>Would you recommend Clarusway to a friend ?</p>
+
+    <input type="radio" id="yes" name="choice" value="yes" checked>
+    <label for="yes" >Definetely,Yes</label><br><br>
+
+    <input type="radio" id="maybe" name="choice" value="maybe">
+    <label for="maybe">Maybe</label><br><br>
+
+    <input type="radio" id="not sure" name="choice" value="not sure">
+    <label for="not sure">Not sure</label><br><br>
+
+    <input type="radio" id="no" name="choice" value="no">
+    <label for="no">Definetely No</label><br><br>
+</section>
+
+<section>
+    <p style="font-size: larger;">What is your favorite feature of Clarusway?</p>
+    <input list="favorite" placeholder="Select an option">
+    <datalist id="favorite">
+        <option value="Classes">
+        <option value="Mentoring">
+        <option value="Preclasses">
+        <option value="Projects">
+        <option value="Road map">
+    </datalist>
+    </section>
+
+
+
+<section>
+    <p>What would you like to see improved ?</p>
+
+    <input type="checkbox" id="FE" name="improve" value="FrontendProjects">
+    <label for="FE">Front-end Projects</label><br><br>
+
+    <input type="checkbox" id="BE" name="improve" value="BackendProjects">
+    <label for="BE">Back-end Projects</label><br><br>
+
+    <input type="checkbox" id="DS" name="improve" value="DataScience">
+    <label for="DS">Data Science</label><br><br>
+
+    <input type="checkbox" id="AC" name="improve" value="AdditionalCourses">
+    <label for="AC">Additional Courses</label><br><br>
+</section>
+
+
+<section>
+    <p>Any comments or suggestions ?</p>
+    <textarea name="comment" id="comment" cols="22" rows="3" placeholder="Enter your comment here...Thanks for your help."></textarea>
+
+    <input type="submit">
+</section>
+
+
+
+
+
+
+</form>
+
+</body>
+</html>
