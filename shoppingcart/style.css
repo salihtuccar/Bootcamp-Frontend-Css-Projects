@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sorts+Mill+Goudy:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container{
+        font-family: 'Poppins', sans-serif;
+    font-family: 'Sorts Mill Goudy', serif;
+    flex-direction: column;
+}
+
+table, tr, th, td{
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+
+th{
+    background-color: #202020;
+    color: white
+}
+
+th, td{
+    padding: 5px;
+}
+
+
+th:first-child{
+    width: 100px;
+    text-align: left;
+
+}
+
+th:nth-child(2){
+    width: 250px;
+    text-align: left;
+}
+
+th:nth-child(3),td:nth-child(3){
+    text-align: center;
+    width: 50px;
+}
+
+th:nth-child(n+4), td:nth-child(n+4){
+    text-align: right;
+    width: 100px;
+
+}
+
+td:last-child, th:last-child{
+    width: 75px;
+}
+
+td:last-child i{
+    padding-right: 10px;
+}
+
+tr:nth-child(odd){
+    background-color: #DDD ;
+}
+tr:nth-child(even){
+    background-color: rgb(251, 245, 245);
+}
+
+
+tfoot td{
+    text-align: right;
+    background-color: #888;
+    color: white;
+    font-weight: 600;   
+}
+
+.bottom{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.button a{
+    display: inline-block;
+    padding: 10px;
+    height: 40px;
+    background-color: lightcoral;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+.button span{
+    color: white;
+}
